@@ -46,14 +46,13 @@ async def amireallyalive(event):
         CAT = [x for x in CAT_IMG.split()]
         A_IMG = list(CAT)
         PIC = random.choice(A_IMG)
-        cat_caption = Anime Bot
-        cat_caption += f"**{CUSTOM_ALIVE_TEXT}**\n\n"
+        cat_caption = f"**{CUSTOM_ALIVE_TEXT}**\n\n"
         cat_caption += f"**{EMOJI} Database :** `{check_sgnirts}`\n"
         cat_caption += f"**{EMOJI} Telethon version :** `{version.__version__}\n`"
         cat_caption += f"**{EMOJI} Catuserbot Version :** `{catversion}`\n"
         cat_caption += f"**{EMOJI} Python Version :** `{python_version()}\n`"
-        cat_caption += f"**{EMOJI} Working Since :** `{uptime}\n`"
-        cat_caption += f"**{EMOJI} Sensei:** {mention}\n"
+        cat_caption += f"**{EMOJI} Uptime :** `{uptime}\n`"
+        cat_caption += f"**{EMOJI} Master:** {mention}\n"
         try:
             await event.client.send_file(
                 event.chat_id, PIC, caption=cat_caption, reply_to=reply_to_id
@@ -72,8 +71,8 @@ async def amireallyalive(event):
             f"**{EMOJI} Telethon Version :** `{version.__version__}\n`"
             f"**{EMOJI} Catuserbot Version :** `{catversion}`\n"
             f"**{EMOJI} Python Version :** `{python_version()}\n`"
-            f"**{EMOJI} Working Since :** `{uptime}\n`"
-            f"**{EMOJI} Sensei :** {mention}\n",
+            f"**{EMOJI} Uptime :** `{uptime}\n`"
+            f"**{EMOJI} Master:** {mention}\n",
         )
 
 
